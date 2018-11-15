@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+#Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#Make zsh default if not already
+chsh -s $(which zsh)
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
